@@ -19,7 +19,7 @@ jobs:
       - name: Check out wasix-libc
         uses: actions/checkout@v3
         with:
-          repository: wasix-org/wasix-libc
+          repository: cristibctr/wasix-libc
           ref: main
           path: wasix-libc
           submodules: "recursive"
