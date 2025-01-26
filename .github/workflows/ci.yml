@@ -70,21 +70,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: Windows (x86)
-            os: windows-latest-8-cores
-            arch: x86
-
           - name: Ubuntu (x86)
-            os: ubuntu-latest-8-cores
+            os: ubuntu-latest
             arch: x86
-
-          - name: Mac (x86)
-            os: macos-12-large
-            arch: x86
-
-          - name: Mac (aarch64)
-            os: macos-13-xlarge
-            arch: aarch64
 
     runs-on: ${{ matrix.os }}
     steps:
