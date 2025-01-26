@@ -7,7 +7,7 @@ on:
   workflow_call:
 jobs:
   build-libc:
-    runs-on: ubuntu-latest-8-cores
+    runs-on: ubuntu-latest
     steps:
       - name: show git config
         run: |
